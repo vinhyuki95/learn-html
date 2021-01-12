@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <style>
+      body {
+      	background: grey;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+      }
+      body > .invoice-number-container  {
+      	border: 1px solid orange;
+        flex-grow: 1;
+      	width: calc(100% / 2);
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+      }
+      body > .transaction-detail-container  {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+      }
+       body > .transaction-detail-container > div {
+        border: 1px solid orange;
+       	width: calc(100% / 2);
+        display: flex;
+        align-items: center;
+       }
+     
+       body > .transaction-detail-container > div + div {
+        border-left: none;
+       }
+      
+      body > .column-label-container {
+      	border: 1px solid orange;
+        flex-grow: 1;
+      }
+      
+      body > .items-container {
+      	border: 1px solid orange;
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='invoice-number-container'>
+      <div>No.</div> 
+    </div>
+    <div class= 'transaction-detail-container'>
+      <div>Sold to:</div>
+      <div>Date:</div>
+    </div>
+    <div class= 'column-label-container'></div>
+    <div class='items-container'>
+    </div>
+  </body>
+</html>
