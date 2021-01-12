@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <style>
+      body {
+        height: 100px;
+        background: grey;
+        display: flex;
+        flex-direction: column;
+      }
+
+      body > div,
+      body > div > div {
+        border-color: orange;
+        border-style: solid;
+        border-width: 1px;
+        height: 50px;
+      }
+
+      body > div.invoice-number-container {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: row;
+        margin-left: auto;
+        width: 50%;
+      }
+
+      body > div.transaction-detail-container {
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      body > div.transaction-detail-container > div {
+        width: 10px;
+      }
+
+      body > div.column-label-container {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+      }
+
+      body > div.item-1-container {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+      }
+
+      body > div.invoice-number-container {
+        flex-grow: 1;
+      }
+
+      body > div.transaction-detail-container > div {
+        flex-grow: 1;
+      }
+
+      body > div.invoice-number-container,
+      div.transaction-detail-container > div {
+        width: 50%;
+      }
+      body > div.column-label-container > div {
+        display: flex;
+        flex-direction: row;
+        background: orange;
+      }
+
+      body > div.column-label-container > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+      }
+
+      body > div.item-1-container > div {
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="invoice-number-container">No.</div>
+    <div class="transaction-detail-container">
+      <div>Sold to:</div>
+      <div>Date:</div>
+    </div>
+    <div class="column-label-container">
+      <div>Item</div>
+      <div>Quantily</div>
+      <div>Description</div>
+      <div>Unit Price</div>
+      <div>Amount</div>
+    </div>
+    <div class="item-1-container">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

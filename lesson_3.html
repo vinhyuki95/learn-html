@@ -1,0 +1,51 @@
+<html> 
+  <head>
+    <style>
+      html, body, #root {
+      	height: 100%;
+      	width: 100%;
+      }
+      
+      div {
+      	display: flex;
+        flex-direction: row;
+      }
+      
+      #root {
+      	background: grey;
+        height: 50%;
+      }
+     
+      div.child {
+      	background: orange;
+      	border-color: grey;
+        border-style: solid;
+        border-width: 1px;
+      }
+      
+      div.child.a {
+      	flex-grow: 1;	
+      }
+      
+      div.child.b {
+      	flex-grow: 2;
+      }
+      
+      div.child.c {
+      	flex-grow: 3;
+      }
+      
+      div.child.d {
+      	flex-grow: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="child a"></div>
+      <div class="child b"></div>
+      <div class="child c"></div>
+      <div class="child d"></div>
+    </div>
+  </body>
+</html>
