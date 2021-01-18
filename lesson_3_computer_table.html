@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <style>
+      body {
+        background: grey;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      body > .moniter-container,
+      body > .moniter-leg1-container,
+      body > .moniter-leg2-container,
+      body > .table-container {
+        border-color: orange;
+        border-style: solid;
+        border-width: 4px;
+      }
+
+      body > .moniter-container,
+      body > .moniter-leg1-container,
+      body > .moniter-leg2-container,
+      body > .table-container,
+      body > .table-leg-container {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      body > .moniter-container {
+        width: 50%;
+        height: 20%;
+      }
+
+      body > .moniter-leg1-container {
+        width: 5%;
+        height: 5%;
+      }
+
+      body > .moniter-leg2-container {
+        width: 20%;
+        height: 5%;
+      }
+
+      body > .table-container {
+        width: 70%;
+        height: 7%;
+      }
+
+      body > .table-leg-container {
+        width: 70%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+      }
+
+      body > .table-leg-container > div {
+        border-color: orange;
+        border-style: solid;
+        width: 50px;
+        border-width: 70%;
+      }
+
+      body > .table-leg-container > .leg1 {
+        margin-right: auto;
+      }
+
+      body > .table-leg-container > .leg2 {
+        margin-left: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="moniter-container"></div>
+    <div class="moniter-leg1-container"></div>
+    <div class="moniter-leg2-container"></div>
+    <div class="table-container"></div>
+    <div class="table-leg-container">
+      <div class="leg1"></div>
+      <div class="leg2"></div>
+    </div>
+  </body>
+</html>
