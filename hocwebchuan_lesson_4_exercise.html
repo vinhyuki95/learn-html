@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <style>
+      body,
+      #root {
+        height: 100%;
+        background: grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      body > #root > img {
+        height: 70px;
+        width: 70px;
+      }
+      body > #root > div {
+        background: white;
+        border: 1px solid;
+        background: white;
+        height: 40px;
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      body > #root > div > input {
+        width: calc(100% - 10px);
+        margin-left: 5px;
+        outline: none;
+        border: none;
+      }
+      body > #root > .button-container {
+        height: 40px;
+        width: 200px;
+        background: #00ced1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      body > #root > .button-container > div {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <img
+        src="https://previews.123rf.com/images/sdcrea/sdcrea1610/sdcrea161000770/64101715-e-mail-icon-design-.jpg"
+      />
+      <h1>Get the invite</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam veverra
+        arcl ut.
+      </p>
+      <div><input placeholder="Enter Email" /></div>
+      <br />
+      <div class="button-container">
+        <div>REQUEST INVITE</div>
+      </div>
+    </div>
+  </body>
+</html>
