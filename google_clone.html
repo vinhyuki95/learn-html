@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <style>
+      #root {
+        height: 100%;
+        width: 100%;
+        background: white;
+        position: relative;
+      }
+
+      #root > .box-container {
+        position: absolute;
+        height: 50px;
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        top: 5px;
+        right: 10px;
+      }
+
+      #root > .box-container > span,
+      #root > .box-container > div {
+        height: 50px;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #root > .box-container > span:hover {
+        text-decoration: underline;
+      }
+
+      #root > .box-container > div:hover {
+        text-decoration: underline;
+      }
+
+      #root > .box-container > .img-box {
+        height: 50px;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        overflow: hidden;
+      }
+
+      #root > .box-container > .img-box > img {
+        height: 100%;
+        width: 100%;
+      }
+
+      body > #root > .google-container {
+        position: absolute;
+        top: 100px;
+        left: 150px;
+        font-size: 100px;
+      }
+
+      body > #root > .google-container > span:nth-child(1),
+      span:nth-child(4) {
+        color: #1e90ff;
+      }
+
+      body > #root > .google-container > span:nth-child(2),
+      span:nth-child(5) {
+        color: #dc143c;
+      }
+
+      #root > .seach-container {
+        border: 1px solid lightgrey;
+        border-radius: 20px;
+        position: absolute;
+        top: 250px;
+        left: 150px;
+        height: 40px;
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      #root > .seach-container > img {
+        height: 20px;
+        width: 20px;
+        margin-left: 10px;
+      }
+
+      #root > .seach-container > input {
+        width: calc(100% - 80px);
+        outline: none;
+        border: none;
+        margin-left: 10px;
+      }
+      #root > .seach-container > div > img {
+        height: 20px;
+        width: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="box-container">
+        <span>Gmail</span>
+        <div>Images</div>
+        <div class="img-box">
+          <img
+            src="https://infmabuudien.com/wp-content/uploads/2020/08/anh-dai-dien-anime-dep_104204759.jpg"
+          />
+        </div>
+      </div>
+      <div class="google-container">
+        <span>G</span>
+        <span>o</span>
+        <span>o</span>
+        <span>g</span>
+        <span>l</span>
+        <span>e</span>
+      </div>
+      <div class="seach-container">
+        <img
+          src="https://techmaster.vn/media/fileman/Uploads/users/6551/search-box/magnifying-glass.png"
+        />
+        <input />
+        <div>
+          <img src="https://image.flaticon.com/icons/png/512/88/88634.png" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

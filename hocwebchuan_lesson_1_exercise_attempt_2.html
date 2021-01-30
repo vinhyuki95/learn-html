@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <style>
+      body {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      body > .value-container {
+        font-size: 20px;
+        height: 40px;
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #4682b4;
+      }
+      body > h1 {
+        font-size: 40px;
+        text-transform: capitalize;
+      }
+      body > h1 > span {
+        color: #1e90ff;
+      }
+
+      body > #root {
+        height: 80px;
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      body > #root > .view-plans-button,
+      body > #root > .all-feature-button {
+        border: 1px solid black;
+        height: 40px;
+        width: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: black;
+      }
+
+      body > #root > .view-plans-button {
+        margin-right: 20px;
+        color: white;
+      }
+
+      body > #root > .view-plans-button:hover {
+        background: orange;
+      }
+
+      body > #root > .all-feature-button {
+        margin-left: 20px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="value-container">190x50</div>
+    <h1>Best <span>shared hosting</span> company</h1>
+    <span>
+      With this responsive landing page template, you can promote your all
+      hosting, domain and email services</span
+    >
+    <br />
+    <div id="root">
+      <div class="view-plans-button"><b>View plans</b></div>
+      <div class="all-feature-button"><b>All features</b></div>
+    </div>
+  </body>
+</html>

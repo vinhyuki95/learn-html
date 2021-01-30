@@ -1,0 +1,196 @@
+<html>
+  <head>
+    <style>
+      #root {
+        height: 100%;
+        width: 100%;
+        background: white;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10%;
+      }
+
+      #root > .box-container {
+        position: absolute;
+        height: 50px;
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        top: 5px;
+        right: 10px;
+      }
+
+      #root > .box-container > span,
+      #root > .box-container > div {
+        height: 50px;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #root > .box-container > span:hover {
+        text-decoration: underline;
+      }
+
+      #root > .box-container > div:hover {
+        text-decoration: underline;
+      }
+
+      #root > .box-container > .img-box {
+        height: 50px;
+        width: 60px;
+        border-radius: 100%;
+        overflow: hidden;
+      }
+
+      #root > .box-container > .img-box > img {
+        height: 100%;
+        width: 100%;
+      }
+
+      body > #root > .google-container {
+        font-size: 80px;
+        display: flex;
+        margin-bottom: 30px;
+      }
+
+      body > #root > .google-container > span:nth-child(1),
+      body > #root > .google-container > span:nth-child(4) {
+        color: #1e90ff;
+      }
+
+      body > #root > .google-container > span:nth-child(2),
+      body > #root > .google-container > span:nth-child(6) {
+        color: #ff0000;
+      }
+
+      body > #root > .google-container > span:nth-child(3) {
+        color: #ffa500;
+      }
+
+      body > #root > .google-container > span:nth-child(5) {
+        color: #008000;
+      }
+
+      #root > .seach-container {
+        border: 1px solid lightgrey;
+        border-radius: 20px;
+        height: 40px;
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+
+      #root > .seach-container > img {
+        height: 20px;
+        width: 20px;
+        margin-left: 10px;
+      }
+
+      #root > .seach-container > input {
+        width: calc(100% - 80px);
+        outline: none;
+        border: none;
+        margin-left: 10px;
+      }
+
+      #root > .seach-container > div > img {
+        height: 20px;
+        width: 20px;
+      }
+
+      #root > .button-container {
+        height: 40px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #root > .button-container > .button1,
+      #root > .button-container > .button2 {
+        border: 1px solid #f5fffa;
+        border-radius: 5px;
+        background: #f5fffa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #root > .button-container > .button1 {
+        height: 30px;
+        width: 120px;
+        margin-right: 10px;
+      }
+
+      #root > .button-container > .button1:hover,
+      #root > .button-container > .button2:hover {
+        background: grey;
+      }
+
+      #root > .button-container > .button2 {
+        height: 30px;
+        width: 130px;
+        margin-left: 10px;
+      }
+
+      #root > .Google-offered-container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+      }
+
+      #root > .Google-offered-container > div:not(:nth-child(1)) {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="box-container">
+        <span>Gmail</span>
+        <div>Images</div>
+        <div class="img-box">
+          <img
+            src="https://infmabuudien.com/wp-content/uploads/2020/08/anh-dai-dien-anime-dep_104204759.jpg"
+          />
+        </div>
+      </div>
+      <div class="google-container">
+        <span>G</span>
+        <span>o</span>
+        <span>o</span>
+        <span>g</span>
+        <span>l</span>
+        <span>e</span>
+      </div>
+      <div class="seach-container">
+        <img
+          src="https://techmaster.vn/media/fileman/Uploads/users/6551/search-box/magnifying-glass.png"
+        />
+        <input />
+        <div>
+          <img src="https://image.flaticon.com/icons/png/512/88/88634.png" />
+        </div>
+      </div>
+      <div class="button-container">
+        <div class="button1">Google seach</div>
+        <div class="button2">I'm feeling lucky</div>
+      </div>
+      <div class="Google-offered-container">
+        <div>Google offered in:</div>
+        <div><a href="#">Tiếng Việt</a></div>
+        <div><a href="#">English</a></div>
+        <div><a href="#">Korean</a></div>
+        <div><a href="#">China</a></div>
+      </div>
+    </div>
+  </body>
+</html>

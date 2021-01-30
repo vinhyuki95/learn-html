@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <style>
+      body,
+      #root {
+        height: 100%;
+        width: 100%;
+        background: lightgrey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #root > .box1-container {
+        height: 50%;
+        width: 50%;
+        background: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      #root > .box1-container > .box2-container {
+        height: 50%;
+        width: 50%;
+        background: lightgreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #root > .box1-container > .box2-container > .box3-container {
+        height: 50%;
+        width: 50%;
+        background: lightpink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #root > .box1-container > .box2-container > .box3-container > div {
+        position: relaive;
+        top: 10px;
+        left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="box1-container">
+        <div class="box2-container">
+          <div class="box3-container">
+            <div>Le thi vinh</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
