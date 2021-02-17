@@ -1,0 +1,334 @@
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+      }
+
+      body {
+        height: 100%;
+        width: 100%;
+        background: grey;
+      }
+
+      #root {
+        height: 100%;
+        width: 50%;
+        background: white;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #root > .row1 {
+        display: flex;
+        flex-direction: row;
+        color: #1e90ff;
+        justify-content: space-between;
+        width: 100%;
+        padding: 5px;
+      }
+
+      #root > .row1 > div:nth-child(1) {
+        margin-left: 5px;
+      }
+
+      #root > .row1 > div:nth-child(2) {
+        margin-right: 10px;
+      }
+
+      #root > .row2 {
+        font-size: 25px;
+        align-self: flex-start;
+        margin-left: 20px;
+      }
+
+      #root > .row3 {
+        height: 30px;
+        width: calc(100% - 20px);
+        border: 1px solid lightgrey;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-start;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #root > .row3 > .img-container {
+        height: 20px;
+        width: 20px;
+        overflow: hidden;
+        margin-right: 2px;
+      }
+
+      #root > .row3 > .img-container > img {
+        height: 100%;
+        width: 100%;
+      }
+
+      #root > .row3 > input {
+        width: calc(100% - 250px);
+        height: 50%;
+        outline: none;
+        border: none;
+        margin-right: 220px;
+      }
+
+      #root > .row4 {
+        width: 100%;
+        height: 10px;
+        border-bottom: 1px solid lightgrey;
+      }
+
+      #root > .row5,
+      #root > .row7,
+      #root > .row9 {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+      }
+
+      #root > .row5 > .r1,
+      #root > .row7 > .r1,
+      #root > .row9 > .r1 {
+        height: 20px;
+        width: 20px;
+        overflow: hidden;
+        margin-top: 5px;
+      }
+
+      #root > .row5 > .r1 > img,
+      #root > .row7 > .r1 > img,
+      #root > .row9 > .r1 > img {
+        height: 50%;
+        width: 50%;
+      }
+
+      #root > .row5 > .r1:nth-child(1),
+      #root > .row7 > .r1:nth-child(1),
+      #root > .row9 > .r1:nth-child(1) {
+        margin-left: 5px;
+      }
+
+      #root > .row5 > .r3:nth-child(3),
+      #root > .row7 > .r3:nth-child(3),
+      #root > .row9 > .r3:nth-child(3) {
+        margin-left: auto;
+        color: grey;
+      }
+
+      #root > .row6 {
+        margin-left: 15px;
+      }
+
+      #root > .row6 > .r2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: grey;
+        margin-top: 3px;
+      }
+
+      #root > .row6 > .r3 {
+        width: 100%;
+        border-bottom: 1px solid lightgrey;
+        margin-top: 5px;
+      }
+
+      #root > .row8,
+      #root > .row10 {
+        padding: 2px;
+        margin-left: 15px;
+      }
+
+      #root > .row8 > .r2,
+      #root > .row10 > .r2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: grey;
+        margin-top: 3px;
+      }
+
+      #root > .row8 > .r3,
+      #root > .row10 > .r3 {
+        width: 100%;
+        border-bottom: 1px solid lightgrey;
+        margin-top: 5px;
+      }
+
+      #root > .row11 {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5px;
+      }
+
+      #root > .row11 > .r1 {
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        overflow: hidden;
+      }
+
+      #root > .row11 > .r1 > img {
+        height: 50%;
+        width: 50%;
+      }
+
+      #root > .row11 > .r3 {
+        color: grey;
+        margin-left: auto;
+      }
+
+      #root > .row13 {
+        background: lightgrey;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        border-top: 1px solid grey;
+        margin-top: auto;
+        width: calc(100% - 10px);
+      }
+
+      #root > .row13 > .r1,
+      #root > .row13 > .r2 {
+        margin-right: auto;
+      }
+
+      #root > .row13 > .r3,
+      #root > .row13 > .r2 {
+        margin-left: auto;
+      }
+      #root > .row13 > .r1,
+      #root > .row13 > .r3 {
+        height: 40px;
+        width: 40px;
+        overflow: hidden;
+        margin-top: 10px;
+      }
+
+      #root > .row13 > .r1 > img,
+      #root > .row13 > .r3 > img {
+        height: 50%;
+        width: 50%;
+      }
+
+      #root > .row13 > .r2 {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #root > .row13 > .r2 > div:nth-child(1) > span,
+      #root > .row13 > .r2 > div:nth-child(2) {
+        color: grey;
+      }
+
+      #root > .row13 > .r2 > div:nth-child(2) > span {
+        color: #1e90ff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="row1">
+        <div>Mailbosxes</div>
+        <div>Edit</div>
+      </div>
+      <div class="row2"><b>All Inboxes</b></div>
+      <div class="row3">
+        <div class="img-container">
+          <img
+            src="https://png.pngtree.com/png-vector/20190729/ourlarge/pngtree-general-magnifier-magnify-search-flat-color-icon-vector-ico-png-image_1622050.jpg"
+          />
+        </div>
+        <input placeholder="Search" />
+      </div>
+      <div class="row4"></div>
+      <div class="row5">
+        <div class="r1">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbun6UPKLmg1JP0ysbRqYSTmpCkTSEwg42zg&usqp=CAU"
+          />
+        </div>
+        <div class="r2"><b>Linkedln</b></div>
+        <div class="r3">6:12PM</div>
+      </div>
+      <div class="row6">
+        <div class="r1">MacDermid Performance Solutions is looking...</div>
+        <div class="r2">
+          <div>Your job recommendation from Linkd</div>
+          <div>...</div>
+        </div>
+        <div class="r3"></div>
+      </div>
+      <div class="row7">
+        <div class="r1">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbun6UPKLmg1JP0ysbRqYSTmpCkTSEwg42zg&usqp=CAU"
+          />
+        </div>
+        <div class="r2"><b>Babak Mohtachemi</b></div>
+        <div class="r3">4:25PM</div>
+      </div>
+
+      <div class="row8">
+        <div class="r1">[Global GRC Community] Happy Chinese New...</div>
+        <div class="r2">
+          <div>Babak Mohtachemi shared a photo in global</div>
+          <div>...</div>
+        </div>
+        <div class="r3"></div>
+      </div>
+
+      <div class="row9">
+        <div class="r1">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbun6UPKLmg1JP0ysbRqYSTmpCkTSEwg42zg&usqp=CAU"
+          />
+        </div>
+        <div class="r2"><b>Qoo10 Singapore</b></div>
+        <div class="r3">4:21PM</div>
+      </div>
+      <div class="row10">
+        <div class="r1">[Global GRC Community] Happy Chinese N...</div>
+        <div class="r2">
+          <div>Babak Mohtachemi shared a photo in global</div>
+          <div>...</div>
+        </div>
+        <div class="r3"></div>
+      </div>
+
+      <div class="row11">
+        <div class="r1">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNYkVlbyLbhMM6T7l8qgwFfcgIf00awpPX_g&usqp=CAU"
+          />
+        </div>
+        <div class="r2"><b>James Goodwin</b></div>
+        <div class="r3">12:41PM</div>
+      </div>
+
+      <div class="row13">
+        <div class="r1">
+          <img
+            src="https://listimg.pinclipart.com/picdir/s/215-2150868_home-menu-icon-png-www-pixshark-com-images.png"
+          />
+        </div>
+        <div class="r2">
+          <div>Update on 21/1/21<span> - 113 Unread</span></div>
+          <div>Uccount Error:Gmail.<span> Detail...</span></div>
+        </div>
+        <div class="r3">
+          <img
+            src="https://www.pngkit.com/png/detail/956-9564990_junior-icon-editor-free-download-for-windows-edit.png"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

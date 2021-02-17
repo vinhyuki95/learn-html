@@ -1,0 +1,375 @@
+<html>
+  <head>
+    <style>
+      body {
+        background: orange;
+        height: 100%;
+        width: 100%;
+      }
+
+      #root {
+        height: 900px;
+        width: 50%;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+      }
+
+      #root > .row1 {
+        color: white;
+        border-radius: 20px;
+        background: dimgrey;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-start;
+        margin-left: 40px;
+      }
+
+      #root > .row2 {
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        align-self: flex-start;
+      }
+      #root > .row2 > .r1 {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      #root > .row2 > .r1 > img {
+        height: 100%;
+        width: 100%;
+      }
+
+      #root > .row2 > .r2 {
+        color: white;
+        background: dimgrey;
+        border-radius: 20px;
+        padding: 5px;
+        margin-left: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #root > .row3 {
+        color: darkslategrey;
+        align-self: space-between;
+      }
+
+      #root > .row4 {
+        height: 50px;
+        width: 120px;
+        background: dimgrey;
+        border-radius: 16px;
+        align-self: flex-end;
+        margin-right: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #root > .row4 > .img {
+        height: 30px;
+        width: 30px;
+        border: 1px solid black;
+        border-radius: 100%;
+        overflow: hidden;
+      }
+
+      #root > .row4 > .img > img {
+        height: 100%;
+        width: 100%;
+      }
+
+      #root > .row4 > div {
+        font-size: 12px;
+        margin-left: 5px;
+      }
+
+      #root > .row4 > .r4 > div:nth-child(1) {
+        color: white;
+      }
+
+      #root > .row4 > .r4 > div:nth-child(2) {
+        color: darkslategrey;
+      }
+
+      #root > .row5 {
+        color: darkslategrey;
+        align-self: space-between;
+      }
+
+      #root > .row6 {
+        background: steelblue;
+        border-radius: 20px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-end;
+        margin-right: 5px;
+        padding: 5px;
+      }
+
+      #root > .row7 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-start;
+        padding: 5px;
+      }
+
+      #root > .row7 > .r1 {
+        border-radius: 50%;
+        overflow: hidden;
+        height: 30px;
+        width: 30px;
+      }
+
+      #root > .row7 > .r1 > img {
+        height: 100%;
+        width: 100%;
+      }
+
+      #root > .row7 > .r2 {
+        color: white;
+        background: dimgrey;
+        border-radius: 20px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+      }
+
+      #root > .row8 {
+        display: flex;
+        flex-direction: row;
+        align-self: flex-start;
+      }
+
+      #root > .row8 > .r1 {
+        height: 30px;
+        width: 30px;
+        border-radius: 100%;
+        overflow: hidden;
+        margin-left: 5px;
+      }
+
+      #root > .row8 > .r1 > img {
+        height: 100%;
+        width: 100%;
+      }
+
+      #root > .row8 > .r2 {
+        height: 35px;
+        width: 35px;
+        border-radius: 100%;
+        overflow: hidden;
+        margin-left: 5px;
+      }
+
+      #root > .row8 > .r2 > img {
+        height: 100%;
+        width: 100%;
+      }
+
+      #root > .row9 {
+        background: steelblue;
+        border-radius: 20px;
+        color: white;
+        align-self: flex-end;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        margin-right: 5px;
+        max-width: 100%;
+      }
+
+      #root > .row10 {
+        background: orange;
+        border-radius: 100%;
+        height: 70px;
+        width: 70px;
+        align-self: flex-end;
+        margin-right: 5px;
+        overflow: hidden;
+      }
+
+      #root > .row10 > img {
+        height: 100%;
+        width: 100%;
+      }
+
+      #root > .row11 {
+        align-self: flex-start;
+        display: flex;
+        flex-direction: row;
+      }
+
+      #root > .row11 > .r1 {
+        height: 30px;
+        width: 30px;
+        border-radius: 100%;
+        overflow: hidden;
+        margin-left: 5px;
+      }
+
+      #root > .row11 > .r1 > img {
+        height: 100%;
+        width: 100%;
+      }
+
+      #root > .row11 > .r2 {
+        height: 70px;
+        width: 70px;
+        border-radius: 100%;
+        overflow: hidden;
+        margin-left: 5px;
+      }
+
+      #root > .row11 > .r2 > img {
+        height: 100%;
+        width: 100%;
+      }
+
+      #root > .row12 {
+        display: flex;
+        direction: row;
+        align-self: flex-start;
+      }
+
+      #root > .row12 > .r1 {
+        height: 30px;
+        width: 30px;
+        border-radius: 100%;
+        overflow: hidden;
+        margin-left: 5px;
+      }
+
+      #root > .row12 > .r1 > img {
+        height: 100%;
+        width: 100%;
+      }
+
+      #root > .row12 > .r2 {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        margin-left: 10px;
+        align-items: flex-start;
+      }
+
+      #root > .row12 > .r2 > div {
+        border-radius: 20px;
+        background: dimgrey;
+        display: flex;
+      }
+
+      #root > .row12 > .r2 > div:nth-child(1) {
+        padding: 5px;
+      }
+
+      #root > .row12 > .r2 > div:not(:nth-child(1)) {
+        padding: 5px;
+        margin-top: 3px;
+      }
+
+      #root > .row13 {
+        border-radius: 20px;
+        background: steelblue;
+        color: white;
+        align-self: flex-end;
+        padding: 5px;
+        max-width: 60%;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="row1">Hi, Bobs!</div>
+      <div class="row2">
+        <div class="r1">
+          <img
+            src="https://i.pinimg.com/564x/08/6d/88/086d888055a2e8b49d4ef31cb795618a.jpg"
+          />
+        </div>
+        <div class="r2">What do you do on weenkends Bobs?</div>
+      </div>
+      <div class="row3">23 JAN, 19:25</div>
+      <div class="row4">
+        <div class="img">
+          <img src="http://i.imgur.com/05XbRKn.png" />
+        </div>
+        <div class="r4">
+          <div><b>Audio Call</b></div>
+          <div>16 secs</div>
+        </div>
+      </div>
+      <div class="row5">28 JAN, 18:54</div>
+      <div class="row6">What time do you finish work today?</div>
+      <div class="row7">
+        <div class="r1">
+          <img
+            src="https://i.pinimg.com/564x/08/6d/88/086d888055a2e8b49d4ef31cb795618a.jpg"
+          />
+        </div>
+        <div class="r2">I finish work at 6pm.</div>
+      </div>
+      <div class="row8">
+        <div class="r1">
+          <img
+            src="https://i.pinimg.com/564x/08/6d/88/086d888055a2e8b49d4ef31cb795618a.jpg"
+          />
+        </div>
+        <div class="r2">
+          <img
+            src="https://i.pinimg.com/236x/46/cc/83/46cc83195e9b08fa0b978ac1a535cd79.jpg"
+          />
+        </div>
+      </div>
+      <div class="row9">Would you like to eat dinner with me?</div>
+      <div class="row10">
+        <img
+          src="https://i.pinimg.com/236x/97/71/09/9771092302f569df378e48ceaa24141c.jpg"
+        />
+      </div>
+
+      <div class="row11">
+        <div class="r1">
+          <img
+            src="https://i.pinimg.com/564x/08/6d/88/086d888055a2e8b49d4ef31cb795618a.jpg"
+          />
+        </div>
+        <div class="r2">
+          <img
+            src="https://img.thuthuatphanmem.vn/uploads/2018/09/22/hinh-mat-cuoi-gio-hai-tay_020028812.jpg"
+          />
+        </div>
+      </div>
+      <div class="row12">
+        <div class="r1">
+          <img
+            src="https://i.pinimg.com/564x/08/6d/88/086d888055a2e8b49d4ef31cb795618a.jpg"
+          />
+        </div>
+        <div class="r2">
+          <div>Sure!</div>
+          <div>What's time?</div>
+        </div>
+      </div>
+      <div class="row13">At 6 p.m at Korean restaurant on 15 Novena</div>
+    </div>
+  </body>
+</html>
