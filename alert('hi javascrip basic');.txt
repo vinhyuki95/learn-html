@@ -1,0 +1,64 @@
+ <!-- <script>
+   //let calculation = '1';
+   // function plus1() {
+   //calculation = calculation + a;
+   
+   // }
+  // plus1();
+   //console.log(calculation);
+
+
+    function information() {
+      var name ='Le Thi Vinh';
+      var date ='October 20th 1995';
+    }
+      alert(name+' '+date);
+    
+   information();
+ </script>  -->
+
+
+
+<!-- <script>
+	 var name;
+   name = prompt('Enter your password here!', '');
+  alert('Your address at 79E Toa Payoh center' + name); 
+</script>-->
+
+<!-- <script>
+	let a = 20;
+  let b = 30;
+  alert(b > a);
+</script>
+ -->
+
+
+<!-- <script>
+	let a = 20;
+  a++;//(thay cho a= a+1)or(a++ thay cho a=a+1)
+  alert(a); 
+      //a += 1 giong a = a + 1 or a -= 1 giong a=a-1)
+</script> -->
+
+
+<!-- <script>
+  var name;
+  let flag = confirm('ban co muon xoa khong?');
+  alert('flag');
+</script>
+ -->
+
+<!-- <script>
+  function test1(x) {
+  	return x*2 ;
+  }
+  
+  function test2(x) {
+    return test1(x)*2;
+   
+  }
+  let a = test1(5);
+  console.log(a);   10//
+    a = test2(10);
+  console.log(a);   
+</script> -->

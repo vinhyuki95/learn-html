@@ -1,0 +1,202 @@
+<html>
+  <head>
+    <style>
+      body {
+      	height: 100%;
+        width: 100%;
+        background: orange;
+      }
+  
+      body > #root {
+      	background: white;
+      	height: 400%;
+        width: 60%;
+      	display: flex;
+        flex-direction: column;
+      }
+      
+      #root > .row1,
+      #root > .row3,
+      #root > .row6,
+      #root > .row8,
+      #root > .row11,
+      #root > .row13,
+      #root > .row16 {
+       	align-self: flex-start;
+       	display: flex;
+        flex-direction: row;
+        padding: 10px;
+       }
+      
+      #root > .row1 > div:nth-child(1), 
+      #root > .row3 > div:nth-child(1),
+      #root > .row6 > div:nth-child(1),
+      #root > .row8 > div:nth-child(1),
+      #root > .row11 > div:nth-child(1),
+      #root > .row13 > div:nth-child(1),
+      #root > .row16 > div:nth-child(1) {
+      	height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-left: 5px;
+      }
+      
+      #root > .row1 > div:nth-child(1) > img,
+      #root > .row3 > div:nth-child(1) > img,
+      #root > .row5 > img,
+      #root > .row6 > div:nth-child(1) > img,
+      #root > .row8 > div:nth-child(1) > img,
+      #root > .row10 > img,
+      #root > .row11 > div:nth-child(1) > img,
+      #root > .row13 > div:nth-child(1) > img,
+      #root > .row14 > img,
+      #root > .row16 > div:nth-child(1) > img {
+      	height: 100%;
+        width: 100%;
+      }
+      
+      #root > .row1 > div:nth-child(2),
+      #root > .row3 > div:nth-child(2),
+      #root > .row6 > div:nth-child(2),
+      #root > .row8 > div:nth-child(2),
+      #root > .row11 > div:nth-child(2),
+      #root > .row13 > div:nth-child(2),
+      #root > .row16 > div:nth-child(2) {
+      	border-radius: 20px;
+        background: lightpink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin-left: 5px;
+        max-width: 50%;
+      }
+      
+      #root > .row2,
+      #root > .row4,
+      #root > .row12,
+      #root > .row15,
+      #root > .row17 {
+      	align-self: flex-end;
+      	border-radius: 20px;
+        background: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin-right: 5px;
+        max-width: 50%;
+      }
+      
+      #root > .row5,
+      #root > .row10 {
+      	height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        align-self: flex-end;
+        margin-right: 5px;
+      } 
+      
+      #root > .row7,
+      #root > .row9 {
+      	align-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        margin-right: 5px;
+        max-width: 50%;
+      }
+      
+      #root > .row7 > div,
+      #root > .row9 > div {
+      	align-self: flex-end;
+        border-radius: 20px;
+        background: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+      }
+      
+      #root > .row7 > div:nth-child(2),
+      #root > .row9 > div:nth-child(2) {
+       	margin-top: 3px;
+      }
+      
+      #root > .row14 {
+      	height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        align-self: flex-end;
+        margin-right: 5px;
+      }
+      	
+      
+    </style>
+  </head>
+  <body>
+    <div id='root'>
+      <div class='row1'>
+      	<div>
+          <img src='https://scontent.fsin9-2.fna.fbcdn.net/v/t1.0-9/110305812_1399326916921787_5345871012582374981_n.jpg?_nc_cat=100&ccb=2&_nc_sid=a4a2d7&_nc_ohc=llVMnEcNzNUAX8PPBGr&_nc_ht=scontent.fsin9-2.fna&oh=69ef21305f13c1d197dcc8c0839bbd20&oe=60482716'/>
+        </div>
+        <div>So, What do you do on weelkends Bob?</div>
+      </div>
+      <div class='row2'>Well, I get up quite late, around elen or twelve. </div>
+      <div class='row3'>
+      	<div>
+          <img src='https://scontent.fsin9-2.fna.fbcdn.net/v/t1.0-9/110305812_1399326916921787_5345871012582374981_n.jpg?_nc_cat=100&ccb=2&_nc_sid=a4a2d7&_nc_ohc=llVMnEcNzNUAX8PPBGr&_nc_ht=scontent.fsin9-2.fna&oh=69ef21305f13c1d197dcc8c0839bbd20&oe=60482716'/>
+        </div>
+        <div>That's way too late! What do you do after you get up?</div>
+      </div>
+      <div class='row4'>Not much really. I relax and play computer games for a white, and when I'm finished, I usually watch some football. </div>
+      <div class='row5'><img src ='https://thuthuatvui.com/wp-content/uploads.old/tong-hop-icon-mat-cuoi-chat-nhat-21.png'/></div>
+      <div class='row6'>
+        <div><img src='https://scontent.fsin9-2.fna.fbcdn.net/v/t1.0-9/110305812_1399326916921787_5345871012582374981_n.jpg?_nc_cat=100&ccb=2&_nc_sid=a4a2d7&_nc_ohc=llVMnEcNzNUAX8PPBGr&_nc_ht=scontent.fsin9-2.fna&oh=69ef21305f13c1d197dcc8c0839bbd20&oe=60482716'/></div>
+        <div>You really don't do anything else?</div>
+      </div>
+      <div class='row7'>
+        <div>If I get hungry</div> 
+        <div>I might get up and microwave some food or grab a snack to munch on while I watch TV.</div>
+      </div>
+      <div class='row8'>
+      	<div><img src='https://scontent.fsin9-2.fna.fbcdn.net/v/t1.0-9/110305812_1399326916921787_5345871012582374981_n.jpg?_nc_cat=100&ccb=2&_nc_sid=a4a2d7&_nc_ohc=llVMnEcNzNUAX8PPBGr&_nc_ht=scontent.fsin9-2.fna&oh=69ef21305f13c1d197dcc8c0839bbd20&oe=60482716'/></div>
+        <div>You're a real couch potato, aren't you?</div>
+     </div>
+      <div class='row9'>
+        <div>Yeah, I suppose you are right, but I enjoy relaxing on the weekend.</div>
+        <div>What else is there to do?</div>
+      </div>
+      <div class='row10'><img src='http://bpic.588ku.com/element_origin_min_pic/17/07/24/812c4b4710d4081809d2b88e3730436a.jpg'/></div>
+      <div class='row11'>
+        <div><img src='https://scontent.fsin9-2.fna.fbcdn.net/v/t1.0-9/110305812_1399326916921787_5345871012582374981_n.jpg?_nc_cat=100&ccb=2&_nc_sid=a4a2d7&_nc_ohc=llVMnEcNzNUAX8PPBGr&_nc_ht=scontent.fsin9-2.fna&oh=69ef21305f13c1d197dcc8c0839bbd20&oe=60482716'/></div>
+        <div>There are lots of ativitives to enjoy on weekends!</div>
+     </div>
+      <div class='row12'>What do you mean?</div>
+      <div class='row13'>
+        <div><img src='https://scontent.fsin9-2.fna.fbcdn.net/v/t1.0-9/110305812_1399326916921787_5345871012582374981_n.jpg?_nc_cat=100&ccb=2&_nc_sid=a4a2d7&_nc_ohc=llVMnEcNzNUAX8PPBGr&_nc_ht=scontent.fsin9-2.fna&oh=69ef21305f13c1d197dcc8c0839bbd20&oe=60482716'/></div>
+        <div>Well, I often wake up early and take a short walk so I can take in the freh air and enjoy the morning. I also like to go on picnics with close friends and family,as well as go fishing if the weather is fine.</div>
+     </div>
+     <div class='row14'><img src='https://png.pngtree.com/png-clipart/20191122/original/pngtree-surprised-emoticon-icon-cartoon-style-png-image_5177775.jpg'/></div>
+      <div class='row15'>Fishing sounds pretty fun. Why don't we go fishing next weekend?</div>
+      <div class='row16'>
+        <div><img src='https://scontent.fsin9-2.fna.fbcdn.net/v/t1.0-9/110305812_1399326916921787_5345871012582374981_n.jpg?_nc_cat=100&ccb=2&_nc_sid=a4a2d7&_nc_ohc=llVMnEcNzNUAX8PPBGr&_nc_ht=scontent.fsin9-2.fna&oh=69ef21305f13c1d197dcc8c0839bbd20&oe=60482716'/></div>
+        <div>Sounds great. And don't forget to bring some sandwiches!</div>
+     </div>
+      <div class='row17'>See you next weekend</div> 
+      
+      
+      
+      
+      
+    </div>
+  </body>
+  </html>      
+        
+        
+        
+        
+        
+</html>

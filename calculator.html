@@ -1,0 +1,135 @@
+<html>
+  <head>
+    <style>
+      * {
+      	margin: 0;
+      }
+      body {
+      	height: 100%;
+        width: 600px;
+      }
+      #root {
+      	height: 150%;
+        width: 50%;
+        background: lightblue;
+        display: flex;
+        flex-direction: column;
+      
+      }
+      #root > .row1 {
+      	height: 70px;
+        background: grey;
+        font-size: 30px;
+        color: white;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+       
+      }
+      
+      #root > .row2,
+      #root > .row3,
+      #root > .row4,
+      #root > .row5,
+      #root > .row6 {
+      	height: 50px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+      }
+      
+      #root > .row2 > div,
+      #root > .row3 > div,
+      #root > .row4 > div,
+      #root > .row5 > div {
+      	color: white;
+      	height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        background: grey;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      #root > .row6 > div {
+      	color: white;
+        display: flex;
+        align-items: center;
+        background: grey;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      #root > .row6 > div:nth-child(1) {
+       	width: 130px;
+        height: 60px;
+        border-radius: 20px;
+      }
+      
+      #root > .row6 > div:nth-child(2),
+      #root > .row6 > div:nth-child(3) {
+       	width: 60px;
+        height: 60px;
+        border-radius: 50%;
+      }
+       
+    </style>
+    <script>
+     let calculation = '';
+     function handleInput(value) {
+       let textDisplayElement = document.querySelector('.row1');
+       if (value !== '=') {
+         calculation = calculation + value;
+         textDisplayElement.innerHTML = calculation;
+       } else { 
+         let result = eval(calculation);
+         textDisplayElement.innerHTML = result;
+         calculation = result.toString(); 
+       }
+         
+       
+       }
+       
+    </script> 
+  </head>
+  <body>
+    <div id='root'>
+      <div class='row1'></div>
+      <div class='row2'>
+        <div onclick='handleInput("AC")'>AC</div>
+        <div onclick='handleInput("+/-")'>+/-</div> 
+        <div onclick='handleInput("%")'>%</div>
+        <div onclick='handleInput("/")'>/</div>
+      </div>
+      <div class='row3'>
+      	<div onclick='handleInput(7)'>7</div>
+        <div onclick='handleInput(8)'>8</div>
+        <div onclick='handleInput(9)'>9</div>
+        <div onclick='handleInput("*")'>x</div>
+      </div>
+      <div class='row4'>
+      	<div onclick='handleInput(4)'>4</div>
+        <div onclick='handleInput(5)'>5</div>
+        <div onclick='handleInput(6)'>6</div>
+        <div onclick='handleInput("-")'>-</div>
+      </div>
+      <div class='row5'>
+      	<div onclick='handleInput(1)'>1</div>
+        <div onclick='handleInput(2)'>2</div>
+        <div onclick='handleInput(3)'>3</div>
+        <div onclick='handleInput("+")'>+</div>
+      </div>
+      <div class='row6'>
+      	<div onclick='handleInput(0)'>0</div>
+        <div onclick='handleInput(",")'>,</div>
+        <div onclick='handleInput("=")'>=</div>
+        
+      </div>
+      
+    </div>
+  </body>
+</html>

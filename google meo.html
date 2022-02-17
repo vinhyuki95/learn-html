@@ -1,0 +1,176 @@
+<html>
+	<head>
+    <style>
+      body, #root {
+      	height: 100%;
+        width: 100%;
+        background: white;
+      }
+      
+      #root {
+      	display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+  
+      }
+      #root > .top-container {
+      	display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+      }
+      
+      #root > .top-container > div {
+      	margin-left: 10px;
+        text-decoration: underline;
+      }
+     
+      #root > .top-container > .img-container {
+      	height: 50px;
+        width: 50px;
+        border: 1px solid black;
+        border-radius: 100%;
+        overflow: hidden;
+      }
+      
+      #root > .top-container > .img-container > img {
+      	height: 100%;
+        width: 100%;
+      }
+      
+      #root > .google-container {
+      	font-size: 90px;
+        display: flex;
+       
+        margin-bottom: 50px;
+      }
+      #root > .google-container > span:nth-child(1),
+      #root > .google-container > span:nth-child(4) {
+      	color: #4169E1;
+      }
+      
+      #root > .google-container > span:nth-child(2),
+      #root > .google-container > span:nth-child(6) {
+      	color: #FF0000;
+      }
+      
+      #root > .google-container > span:nth-child(3) {
+      	color: #FFA500;
+      }
+      
+      #root > .google-container > span:nth-child(5) {
+      	color: #008000;
+      }
+      
+      #root > .seach-google-container {
+        border: 1px solid lightgrey;
+        border-radius: 20px;
+        height: 40px;
+        width: 450px;
+        background: white;
+      	display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      } 
+      
+      #root > .seach-google-container > div > img {
+      	height: 15px;
+        width: 15px;
+      }
+      
+      #root > .seach-google-container > input {
+      	width: calc(100% - 80px);
+        outline: none;
+        border: none;
+      }
+      
+      #root > .seach-google-container > .img1 > img {
+      	margin-right: 10px;
+      }
+     
+      #root > .seach-google-container > .img2 > img {
+      	margin-left: 5px;
+      }
+     
+      
+      #root > .button-container {
+      	display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+      }
+      
+      #root > .button-container > div {
+      	border-radius: 8px;
+      	border: 1px solid lightgrey;
+        height: 25px;
+        width: 150px;
+       	display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      
+      #root > .button-container > div:not(:nth-child(1)) {
+      	margin-left: 30px;
+      }
+      
+      #root > .google-offered-container {
+      	display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+      
+      #root > .google-offered-container > div:not(:nth-child(1)) {
+      	margin-left: 8px;
+      }
+    </style>
+	</head>
+  <body>
+    <div id='root'>
+      <div class='top-container'>
+        <div>Gmail</div>
+        <div>Images</div>
+        <div class='img-container'>
+         <img src='https://thuthuatnhanh.com/wp-content/uploads/2019/04/hinh-anh-meo-peach-cute-580x580.jpg'/>
+        </div>
+      </div>
+      <div class='google-container'>
+        <span>G</span>
+        <span>o</span>
+        <span>o</span>
+        <span>g</span>
+        <span>l</span>
+        <span>e</span>
+      </div> 
+      <div class='seach-google-container'>
+        <div class='img1'>
+          <img src='https://cdn1.iconfinder.com/data/icons/seo-and-web-development-6/32/development_search_magnifier_magnifying_glass_loupe-67-512.png'/>
+       </div>
+        <input/>
+       <div class='img2'>
+          <img src='https://image.flaticon.com/icons/png/512/15/15096.png'/>
+      </div>
+      </div>
+      <div class='button-container'>
+        <div>Google search</div>
+        <div>I'm feeling lucky</div>
+      </div>
+      <div class='google-offered-container'>
+        <div>Google offered in:</div>
+        <div><a href='#'>Tiếng Việt</a></div>
+        <div><a href='#'>Japan</a></div>
+        <div><a href='#'>France</a></div>
+        <div><a href='#'>China</a></div>
+        
+      </div>
+    </div>
+  </body>
+</html>
