@@ -1,0 +1,129 @@
+<!-- <html>
+<head>
+<style>
+    html, body {
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+    }
+    
+    body > div:nth-child(1) {
+    font-size: 30px;
+    border: 5px solid white;
+    display: flex;
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    color: red;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    }
+</style>
+</head>
+<body>
+<div>My name is Vinh</div>
+<div>i am 28 year old </div>
+</body>
+</html> -->
+
+<html>
+
+<head>
+	<style>
+		html,
+		body {
+			height: 600px;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
+		}
+
+		body>#root {
+			height: 500px;
+			width: 300px;
+			background: orange;
+			display: flex;
+			flex-direction: column;
+		}
+
+		body>#root>.monitor {
+			height: 100px;
+			width: 100%;
+			background-color: #FF6600;
+			font-size: 30px;
+		}
+
+		body>#root>div:not(:nth-child(1)) {
+			height: calc((100% - 100px) / 5);
+			display: flex;
+			flex-direction: row;
+			padding: 6px;
+		}
+
+		body>#root>div:not(.monitor)>div {
+			flex-grow: 1;
+			flex-basis: 0;
+			height: 100%;
+			background-color: #009966;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: white;
+			font-size: 20px;
+		}
+
+		body>#root>div:not(.monitor)>div:not(:nth-child(1)) {
+			margin-left: 6px;
+		}
+
+		body>#root>.row5>div:nth-child(1) {
+			flex-grow: 2;
+			flex-basis: 6px;
+			border-radius: 25px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="root">
+		<div class="monitor"></div>
+		<div class="row1">
+			<div>A/C</div>
+			<div>+/-</div>
+			<div>%</div>
+			<div>/</div>
+		</div>
+		<div class="row2">
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>*</div>
+		</div>
+		<div class="row3">
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>-</div>
+		</div>
+		<div class="row4">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>+</div>
+		</div>
+		<div class="row5">
+			<div>0</div>
+			<div>.</div>
+			<div>=</div>
+		</div>
+	</div>
+</body>
+
+</html>
