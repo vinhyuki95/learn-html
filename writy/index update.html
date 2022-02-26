@@ -1,0 +1,274 @@
+<html>
+
+<head>
+  <style>
+    * {
+      margin: 0px;
+    }
+
+    html {
+      font-family: "Arial";
+    }
+
+    body {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    body>#root {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #root>.top-container {
+      height: 55px;
+      width: 100%;
+      border-bottom: 1px solid #CFCFCF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #root>.top-container>.header-container {
+      width: 1170px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5px;
+    }
+
+    #root>.top-container>.header-container>img {
+      height: 25px;
+      width: 70px;
+    }
+
+    #root>.top-container>.header-container>.navigation-bar {
+      height: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-left: 2px;
+    }
+
+    #root>.top-container>.header-container>.navigation-bar>div {
+      text-transform: capitalize;
+      margin-left: 10px;
+    }
+
+    #root>.top-container>.header-container>.get-started-button {
+      height: 29px;
+      width: 110px;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+      margin-right: 200px;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: white;
+      background: #007700;
+    }
+
+    #root>.top-container>.header-container>.get-started-button:hover {
+      background: white;
+      color: #009900;
+      border: 1px solid #009900;
+    }
+
+    #root>.content-container {
+      margin-top: 22px;
+      width: 1170px;
+      height: 800px;
+      height: 390px;
+      display: flex;
+    }
+
+    #root>.content-container>.img-container {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    #root>.content-container>.img-container>img {
+      height: 390px;
+      width: 625px;
+    }
+
+    #root>.content-container>.img-container>.post-title {
+      height: 144px;
+      width: 425px;
+      background-color: white;
+      opacity: 0.9;
+      position: absolute;
+      left: 38px;
+      top: 214px;
+    }
+
+    #root>.content-container>.img-container>.post-title {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #root>.content-container>.img-container>.post-title>div {
+      margin-left: 25px;
+    }
+
+    #root>.content-container>.img-container>.post-title>div:nth-child(1) {
+      width: 60px;
+      height: 15px;
+      background-color: #007700;
+      color: white;
+      font-size: 10px;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    #root>.content-container>.img-container>.post-title>div:nth-child(2) {
+      margin-top: 18px;
+      font-size: 24px;
+    }
+
+    #root>.content-container>.img-container>.post-title>div:nth-child(3) {
+      margin-top: 12px;
+      text-transform: uppercase;
+      color: #828282;
+      font-size: 11px;
+    }
+
+    #root>.content-container>.featured-stories-container {
+      width: 334px;
+      margin-left: 30px;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    #root>.content-container>.featured-stories-container>.featured-story-title {
+      font-size: 19px;
+    }
+
+    #root>.content-container>.featured-stories-container>.line-container {
+      height: 1px;
+      width: 90%;
+      background-color: #DCDCDC;
+    }
+
+    #root>.content-container>.featured-stories-container>.line-container>div {
+      height: 2px;
+      width: 30px;
+      background: #006600;
+    }
+
+    #root>.content-container>.featured-stories-container>.story-container {
+      height: 70px;
+      display: flex;
+      flex-direction: row;
+    }
+
+    #root>.content-container>.featured-stories-container>.story-container>img {
+      height: 70px;
+      max-width: 104px;
+      min-width: 104px;
+    }
+
+    #root>.content-container>.featured-stories-container>.story-container>.text {
+      margin-left: 20px;
+    }
+
+    #root>.content-container>.featured-stories-container>.story-container>.text>div:nth-child(1) {
+      font-size: 13px;
+    }
+
+    #root>.content-container>.featured-stories-container>.story-container>.text>div:nth-child(2) {
+      font-size: 10px;
+      margin-top: 8px;
+      color: #B5B5B5;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="root">
+    <div class="top-container">
+      <div class="header-container">
+        <img src="https://d3hr9drcfoe7a7.cloudfront.net/telegram/715574836/logo-1.png">
+        <div class="navigation-bar">
+          <div>home</div>
+          <div>opinion</div>
+          <div>editorial</div>
+          <div>cuiture</div>
+          <div>global</div>
+          <div>essay</div>
+          <div>letters</div>
+          <div>sport</div>
+          <div>educations</div>
+        </div>
+        <div class="get-started-button">get started</div>
+      </div>
+    </div>
+
+    <div class="content-container">
+
+      <div class="img-container">
+        <img src="https://d3hr9drcfoe7a7.cloudfront.net/telegram/715574836/bg-01.jpg">
+        <div class="post-title">
+          <div>editorial</div>
+          <div><b>Govt distributes free medicines<br />to support seft-isolating patients</b></div>
+          <div>by john doe august 25, 2021</div>
+        </div>
+      </div>
+
+      <div class="featured-stories-container">
+        <div class="featured-story-title"><b>Featured story</b></div>
+        <div class="line-container">
+          <div></div>
+        </div>
+        <div class="story-container">
+          <img src="https://d3hr9drcfoe7a7.cloudfront.net/telegram/715574836/img-01.jpg">
+          <div class="text">
+            <div><b>The time to unclock Industry<br /> 4.0 growth is now</b></div>
+            <div><b>AUGUST 25, 2021</b></div>
+          </div>
+        </div>
+        <div class="story-container">
+          <img src="https://d3hr9drcfoe7a7.cloudfront.net/telegram/715574836/img-02.jpg">
+          <div class="text">
+            <div> <b> Historic Olympic gold brings <br /> joy to weary Indonesia</b></div>
+            <div><b>AUGUST 25, 2021</b></div>
+          </div>
+        </div>
+        <div class="story-container">
+          <img src="https://d3hr9drcfoe7a7.cloudfront.net/telegram/715574836/img-03.jpg">
+          <div class="text">
+            <div><b>COVID-19: The evolution of scams in Asia-Pascific</b></div>
+            <div><b>AUGUST 25, 2021</b></div>
+          </div>
+        </div>
+        <div class="story-container">
+          <img src="https://d3hr9drcfoe7a7.cloudfront.net/telegram/715574836/img-04.jpg">
+          <div class="text">
+            <div><b>Bringing yoga, peace and wellness to your home</b></div>
+            <div><b>AUGUST 25, 2021</b></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

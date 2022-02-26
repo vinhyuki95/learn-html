@@ -1,0 +1,167 @@
+<!-- <html>
+  <head>
+    <style>
+    	html, body {
+        height: 600px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+     	}
+      
+     	body > #root {
+        width: 300px;
+        background: orange;
+        display: flex;
+        flex-direction: column;
+    	}
+      
+     	body > #root > .monitor {
+        height: 100px;
+        width: 100%;
+        background-color: #FF6600;
+        font-size: 30px;
+     	}
+      
+      body > #root > .buttons {
+      	background-color: 	#00CC99;
+      	flex-grow: 1;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+      }
+      
+      .button {
+      	color: red;
+        width: calc(100% / 4);
+        height: 70px;
+        border-radius: 100%;
+        background-color: #FF9900;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+       }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="monitor"></div>
+      <div class="buttons"></div>
+    </div>
+    
+    <script>
+      let arr = ['A/C','+/-','%','/',7,8,9,'*',4,5,6,'-',1,2,3,'+',0,'.','='];
+      let calculation = '';
+      for(let i = 0; i < arr.length; i = i+1) {
+        const newButton = document.createElement('div');
+        newButton.classList.add('button');
+        newButton.innerHTML = arr[i];
+        newButton.onclick = () => {
+       		if(arr[i] !== '=') {
+            calculation = calculation + arr[i];
+            const monitor = document.querySelector('.monitor');
+           	monitor.innerHTML = calculation ;  
+
+          } else {
+          	let result = eval(calculation);
+          	const monitor = document.querySelector('.monitor');
+            monitor.innerHTML = result;
+          }
+        }
+
+        const container = document.querySelector('.buttons');
+        container.appendChild(newButton);
+        
+         
+      }
+    </script>
+  </body>
+</html>
+
+ -->
+<html>
+
+<head>
+  <style>
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      background-color: #999966;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    body>#root {
+      height: 400px;
+      width: 300px;
+      background-color: #00CC99;
+    }
+
+    body>#root>.monitor {
+      height: 90px;
+      width: 100%;
+      background-color: #FFFF99;
+      font-size: 30px;
+      color: #009966;
+    }
+
+    body>#root>.buttons {
+      color: white;
+      font-size: 24px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    body>#root>.buttons>.button {
+      height: 50px;
+      width: calc(100% / 4);
+      border-radius: 100px;
+      background-color: #FF9900;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id='root'>
+    <div class='monitor'></div>
+    <div class='buttons'></div>
+  </div>
+</body>
+<script>
+  let arr = ['A/C', '+/-', '%', '/', 7, 8, 9, '*', 4, 5, 6, '-', 1, 2, 3, '+', 0, '.', '='];
+  let calculation = '';
+
+  for (let i = 0; i < arr.length; i = i + 1) {
+    const newbutton = document.createElement('div');
+    newbutton.classList.add('button');
+    newbutton.innerHTML = arr[i];
+
+    newbutton.onclick = () => {
+      if (arr[i] !== '=') {
+        calculation = calculation + arr[i];
+        const monitor = document.querySelector('.monitor');
+        monitor.innerHTML = calculation;
+      } else {
+        result = eval(calculation);
+        calculation = result.toString();
+        const monitor = document.querySelector('.monitor');
+        monitor.innerHTML = result;
+      }
+    }
+
+    const container = document.querySelector('.buttons');
+    container.appendChild(newbutton);
+  }
+</script>
+
+</html>
